@@ -11,6 +11,18 @@ $(document).ready(function () {
     },
   });
 
+  var swiper = new Swiper(".solutions-swiper", {
+    slidesPerView: 1,
+    spaceBetween: 50,
+    pagination: {
+      el: ".swiper-pagination",
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+
   // accordion
   $(".accordion-header").click(function () {
     $(this).toggleClass("active").next(".accordion-content").slideToggle().parent().siblings().find(".accordion-content").slideUp().prev().removeClass("active");
