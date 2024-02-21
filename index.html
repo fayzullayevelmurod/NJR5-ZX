@@ -237,10 +237,10 @@
       </section>
 
       <!-- monitoring-section -->
-      <div class="monitoring-section">
-        <div class="container">
-          <div class="monitoring-content">
-            <h2 class="title__text-sm">Дополнительные параметры контроля состояния</h2>
+      <section class="monitoring-section">
+        <div class="monitoring-content">
+          <h2 class="title__text-sm">Дополнительные параметры контроля состояния</h2>
+          <div class="monitoring__content-boxes">
             <div class="monitoring__content-box">
               <h4 class="list-title">Измерение через промышленный протокол Modbus RS485:</h4>
               <ul class="list">
@@ -251,9 +251,27 @@
                 <li>Потери мощности в статоре</li>
               </ul>
             </div>
+
+            <div class="monitoring__content-box">
+              <h4 class="list-title">Контроль через аналоговый выход:</h4>
+              <ul class="list">
+                <li>4мA~20мA, 0мA~20мA, 2мA~10мA и 0мA~10мA</li>
+              </ul>
+              <h4 class="list-title">УПП защита от перегрева: </h4>
+              <ul class="list">
+                <li>предупреждение 65-75°С, отключение 75-90°С</li>
+              </ul>
+              <h4 class="list-title">Защита двигателя от перегрева: </h4>
+              <ul class="list">
+                <li>PTC вход для контроля температуры в обмотке статора двигателя</li>
+              </ul>
+            </div>
           </div>
         </div>
-      </div>
+        <div class="monitoring__img-box">
+          <img src="images/monitoring-img.png" alt="monitoring-img">
+        </div>
+      </section>
 
     </main>
 
