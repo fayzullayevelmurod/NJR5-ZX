@@ -31,19 +31,27 @@ $(document).ready(function () {
   // modal
   $('.open-modal').click(function () {
     $('.parent-modal').addClass('show');
-    document.body.style.overflow = 'hidden';
+    
   })
   $('.modal-close').click(function () {
     $('.parent-modal').removeClass('show');
-    document.body.style.overflow = 'auto';
+    
   })
   $('.send-data').click(function () {
     $('.parent-modal').removeClass('show');
     $('.parent-moda-two').addClass('show');
-    document.body.style.overflow = 'hidden';
+    
   })
   $('.modal__close-two').click(function () {
     $('.parent-moda-two').removeClass('show');
-    document.body.style.overflow = 'auto';
+    
   })
+
+  $('.open-menu').click(function () {
+    $('.nav').addClass('active')
+  })
+  $('.close-btn').click(function () {
+    $('.nav').removeClass('active')
+  })
+
 });
