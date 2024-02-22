@@ -3,7 +3,8 @@ $(document).ready(function () {
     slidesPerView: 1,
     spaceBetween: 100,
     pagination: {
-      el: ".swiper-pagination",
+      el: '.swiper-pagination',
+      clickable: true
     },
     navigation: {
       nextEl: ".swiper-button-next",
@@ -16,6 +17,8 @@ $(document).ready(function () {
     spaceBetween: 50,
     pagination: {
       el: ".swiper-pagination",
+      clickable: true
+
     },
     navigation: {
       nextEl: ".swiper-button-next",
@@ -31,20 +34,20 @@ $(document).ready(function () {
   // modal
   $('.open-modal').click(function () {
     $('.parent-modal').addClass('show');
-    
+
   })
   $('.modal-close').click(function () {
     $('.parent-modal').removeClass('show');
-    
+
   })
   $('.send-data').click(function () {
     $('.parent-modal').removeClass('show');
     $('.parent-moda-two').addClass('show');
-    
+
   })
   $('.modal__close-two').click(function () {
     $('.parent-moda-two').removeClass('show');
-    
+
   })
 
   $('.open-menu').click(function () {
