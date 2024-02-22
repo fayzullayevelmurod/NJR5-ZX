@@ -759,6 +759,8 @@ body {
   max-width: 800px;
   width: 100%;
   margin: auto;
+  overflow: scroll;
+  margin: 50px 0;
 }
 
 .modal-header h3 {
@@ -1814,6 +1816,10 @@ body {
   .header .logo img {
     width: 100%;
     height: 100%;
+  }
+
+  .close-btn {
+    top: 20px;
   }
 
   .areas__use-section .gallery-card .gallery__card-content {
