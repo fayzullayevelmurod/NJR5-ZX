@@ -1997,3 +1997,7 @@ body {
     gap: 20px;
   }
 }
+
+.modal input.danger {
+  border-color: #D41518 !important;
+}

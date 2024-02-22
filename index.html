@@ -701,23 +701,23 @@
             </svg>
           </button>
         </div>
-        <div class="modal-body">
+        <form class="modal-body" id="register-form" novalidate="novalidate">
           <label>ФИО*</label>
-          <input type="text" name="text" placeholder="Иванов Олег Николаевич">
+          <input type="text" name="text" placeholder="Иванов Олег Николаевич" id="name">
           <div class="flex-box">
             <div>
-              <label>Телефон**</label>
-              <input type="number" name="phone">
+              <label>Телефон*</label>
+              <input type="number" name="phone" id="phone">
             </div>
             <div>
               <label>Email*</label>
-              <input type="email" name="email">
+              <input type="email" name="email" id="email">
             </div>
           </div>
           <label>Организация*</label>
-          <input type="text" name="text">
+          <input type="text" name="text" id="organizatioin">
           <label>Адрес*</label>
-          <input type="text" name="text">
+          <input type="text" name="text" id="adress">
           <label>Комментарий</label>
           <textarea></textarea>
           <div class="modal-footer">
@@ -728,9 +728,9 @@
               </label>
               <img src="images/icons/re-captcha.png" alt="" width="58" height="48">
             </div>
-            <button class="send-data" type="submit">Отправить</button>
+            <button class="send-data" id="submit">Отправить</button>
           </div>
-        </div>
+        </form>
       </div>
     </div>
   </div>
