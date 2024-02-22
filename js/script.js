@@ -47,6 +47,13 @@ $(document).ready(function () {
     $('.parent-moda-two').removeClass('show');
 
   })
+  $('.modal').click(function (e) {
+    if (e.target === this) {
+      $('.parent-modal').removeClass('show');
+      $('.parent-moda-two').removeClass('show');
+    }
+  });
+
 
   $('.open-menu').click(function () {
     $('.nav').addClass('active')
@@ -58,7 +65,7 @@ $(document).ready(function () {
   $("#submit").click(function (e) {
     e.preventDefault();
 
-    var formFields = ['name', 'email', 'phone', 'organizatioin', 'adress'];
+    var formFields = ['name', 'phone', 'email', 'organizatioin', 'adress'];
     var clickTime = new Date().getTime();
 
     for (var i = 0; i < formFields.length; i++) {
@@ -77,6 +84,8 @@ $(document).ready(function () {
     if (currentTime - clickTime < 1000) {
       $('.parent-modal').removeClass('show');
       $('.parent-moda-two').addClass('show');
+      $('input').val('');
+      $('textarea').val('');
     }
   });
 
