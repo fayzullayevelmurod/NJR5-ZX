@@ -10,6 +10,7 @@ $(document).ready(function () {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
     },
+    loop: true,
   });
 
   var swiper = new Swiper(".solutions-swiper", {
@@ -24,6 +25,7 @@ $(document).ready(function () {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
     },
+    loop: true,
   });
 
   // accordion
