@@ -1992,4 +1992,8 @@ body {
     height: 28px;
     gap: 0;
   }
+
+  .modal-footer {
+    gap: 20px;
+  }
 }
