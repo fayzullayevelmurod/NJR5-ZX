@@ -1984,5 +1984,12 @@ body {
     line-height: 39px;
   }
 
-  .slider-boxes {}
+  .services-section .services-box a svg {
+    height: 17px;
+  }
+
+  .services-section .services-box a {
+    height: 28px;
+    gap: 0;
+  }
 }
