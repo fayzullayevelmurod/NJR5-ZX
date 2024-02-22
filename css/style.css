@@ -27,7 +27,7 @@ ul {
 body {
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
-  background-image: url(../images/bg.png);
+  background-image: url(../images/bg.webp);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -1503,7 +1503,7 @@ body {
   }
 
   body {
-    background-image: url(../images/md-bg.png);
+    background-image: url(../images/md-bg.webp);
   }
 
   .characteristics-section .characteristics__img-box {
@@ -1803,7 +1803,7 @@ body {
 
 @media screen and (max-width: 480px) {
   body {
-    background-image: url(../images/media-bg.png);
+    background-image: url(../images/media-bg.webp);
   }
 
   .header .logo {
