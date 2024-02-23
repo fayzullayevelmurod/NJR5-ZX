@@ -26,6 +26,16 @@ $(document).ready(function () {
       prevEl: ".swiper-button-prev",
     },
     loop: true,
+    breakpoints: {
+      800: {
+        slidesPerView: 1.23,
+        spaceBetween: 50,
+      },
+      0: {
+        slidesPerView: 1,
+        spaceBetween: 0,
+      },
+    }
   });
 
   // accordion
