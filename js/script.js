@@ -14,7 +14,7 @@ $(document).ready(function () {
   });
 
   var swiper = new Swiper(".solutions-swiper", {
-    slidesPerView: 1,
+    slidesPerView: 1.23,
     spaceBetween: 50,
     pagination: {
       el: ".swiper-pagination",
@@ -67,18 +67,18 @@ $(document).ready(function () {
     var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return emailRegex.test(email);
   }
-  
+
   $("#submit").click(function (e) {
     e.preventDefault();
-  
+
     var formFields = ['name', 'phone', 'email', 'adress'];
     var clickTime = new Date().getTime();
     var allFieldsFilled = true;
-  
+
     for (var i = 0; i < formFields.length; i++) {
       var field = $("#" + formFields[i]);
       var value = field.val();
-  
+
       if (value.length == "") {
         field.addClass('danger');
         allFieldsFilled = false;
@@ -86,7 +86,7 @@ $(document).ready(function () {
         field.removeClass('danger');
       }
     }
-  
+
     // Email uchun validatsiya
     var emailField = $("#email");
     var emailValue = emailField.val();
@@ -96,7 +96,7 @@ $(document).ready(function () {
     } else {
       emailField.removeClass('danger');
     }
-  
+
     if (allFieldsFilled) {
       var currentTime = new Date().getTime();
       if (currentTime - clickTime < 1000) {
