@@ -187,7 +187,7 @@
 
           <div class="protection__section-img">
             <picture>
-              <img loading="lazy" src="images/dvigatel.webp" alt="">
+              <img loading="lazy" src="images/dvigatel2.png" alt="">
             </picture>
 
           </div>
@@ -197,12 +197,12 @@
       <!-- characteristics-section -->
       <section class="characteristics-section" id="characteristics">
         <h1 class="title-text hidden">Характеристики</h1>
-        <div class="characteristics__img-box">
-          <picture>
-            <img loading="lazy" src="images/charakter-img.webp" alt="characteristics__img">
-          </picture>
-        </div>
         <div class="container">
+          <div class="characteristics__img-box">
+            <picture>
+              <img loading="lazy" src="images/charakter-img.png" alt="characteristics__img">
+            </picture>
+          </div>
           <div class="characteristics-content">
             <h1 class="title-text media">Характеристики</h1>
             <ul class="list">
@@ -339,7 +339,7 @@
           <h2 class="title-text">Области применения</h2>
           <div class="areas__use-img-box">
             <picture>
-              <img loading="lazy" src="images/areas__use-img.webp" alt="areas__use-img">
+              <img loading="lazy" src="images/areas-us.png" alt="areas__use-img">
             </picture>
           </div>
           <div class="areas__use-gallery">
@@ -745,7 +745,7 @@
             </svg>
           </button>
         </div>
-        <form class="modal-body" id="register-form" novalidate="novalidate">
+        <form class="modal-body" id="register-form">
           <label>ФИО*</label>
           <input type="text" name="text" placeholder="" id="name">
           <div class="flex-box">
@@ -755,7 +755,8 @@
             </div>
             <div>
               <label>Email*</label>
-              <input type="email" name="email" id="email">
+              <input type="email" name="email" id="email"
+                pattern="/^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/" required>
             </div>
           </div>
           <label>Организация</label>
@@ -774,7 +775,7 @@
                 <img loading="lazy" src="images/icons/re-captcha.png" alt="" width="58" height="48">
               </picture>
             </div>
-            <button class="send-data" id="submit">Отправить</button>
+            <button class="send-data" type="submit" id="submit">Отправить</button>
           </div>
         </form>
       </div>
