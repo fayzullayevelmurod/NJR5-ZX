@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -191,7 +195,7 @@ body {
   position: fixed;
   width: 100%;
   z-index: 99999;
-  background: linear-gradient(180deg, #002A5B 0%, rgba(7, 46, 92, 0.69) 38.59%, rgba(12, 49, 92, 0) 72.66%);
+  background: #002A5B;
 }
 
 .main {
@@ -201,7 +205,6 @@ body {
 .header .container {
   display: flex;
   align-items: center;
-  margin-bottom: 53px;
 }
 
 .header .logo {
@@ -350,8 +353,6 @@ body {
 .protection-section {
   padding: 88px 0 220px 0;
   position: relative;
-  max-width: 1920px;
-  margin: 0 auto;
 }
 
 .protection-section .protection__section-img {
@@ -403,8 +404,6 @@ body {
 .characteristics-section {
   position: relative;
   padding-bottom: 301px;
-  max-width: 1920px;
-  margin: 0 auto;
 }
 
 .characteristics-section .list {
@@ -483,8 +482,6 @@ body {
 .areas__use-section {
   position: relative;
   padding-bottom: 137px;
-  max-width: 1920px;
-  margin: 0 auto;
 }
 
 .areas__use-section .title-text {
@@ -742,6 +739,7 @@ body {
   align-items: center;
   justify-content: center;
   z-index: 99999;
+  padding: 0 20px;
 }
 
 .modal input.danger {
@@ -851,9 +849,15 @@ body {
   border: none;
   padding: 0;
   position: absolute;
-  top: 20px;
-  right: 20px;
+  top: 10px;
+  right: 10px;
   cursor: pointer;
+}
+
+.modal .modal-close svg,
+.modal .modal__close-two svg {
+  width: 30px;
+  height: 30px;
 }
 
 .modal .re-captcha {
@@ -1251,12 +1255,6 @@ body {
 
   .modal-dialog {
     padding: 20px;
-    margin: 20px;
-  }
-
-  .modal .flex-box {
-    flex-wrap: wrap;
-    gap: 10px;
   }
 
   .modal input,
@@ -1624,17 +1622,10 @@ body {
     font-size: 16px;
   }
 
-  .modal .modal-close svg {
+  /* .modal .modal-close svg {
     width: 20px;
     height: 20px;
-  }
-
-  .modal .modal-close {
-    width: 20px;
-    height: 20px;
-    top: 15px;
-    right: 32px;
-  }
+  } */
 }
 
 @media screen and (max-width: 768px) {
@@ -1847,6 +1838,7 @@ body {
     top: 60px;
     width: 300px;
   }
+
 }
 
 @media screen and (max-width: 480px) {
@@ -1997,7 +1989,7 @@ body {
   }
 
   .protection-section .protection-box .list:last-child {
-    margin-top: 83px;
+    margin-top: 94px;
   }
 
   .main {
@@ -2079,4 +2071,23 @@ body {
     margin-left: -2px;
   }
 
+  .modal .flex-box {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .modal .re-captcha {
+    padding: 0 20px;
+    border-radius: 10px;
+    width: 100%;
+    height: 60px;
+  }
+
+  .modal-footer button {
+    width: 100%;
+  }
+
+  .protection-section .list:last-child {
+    margin-left: 0;
+  }
 }

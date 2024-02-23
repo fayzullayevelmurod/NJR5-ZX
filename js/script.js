@@ -54,7 +54,7 @@ $(document).ready(function () {
     }
   });
 
-
+  // menu
   $('.open-menu').click(function () {
     $('.nav').addClass('active')
   })
@@ -62,32 +62,35 @@ $(document).ready(function () {
     $('.nav').removeClass('active')
   })
 
+  // form
   $("#submit").click(function (e) {
     e.preventDefault();
 
-    var formFields = ['name', 'phone', 'email', 'organizatioin', 'adress'];
+    var formFields = ['name', 'phone', 'email', 'adress'];
     var clickTime = new Date().getTime();
+    var allFieldsFilled = true;
 
     for (var i = 0; i < formFields.length; i++) {
       var field = $("#" + formFields[i]);
       var value = field.val();
 
       if (value.length == "") {
-        field.focus().addClass('danger');
-        return false;
+        field.addClass('danger');
+        allFieldsFilled = false;
       } else {
         field.removeClass('danger');
       }
     }
 
-    var currentTime = new Date().getTime();
-    if (currentTime - clickTime < 1000) {
-      $('.parent-modal').removeClass('show');
-      $('.parent-moda-two').addClass('show');
-      $('input').val('');
-      $('textarea').val('');
+    if (allFieldsFilled) {
+      var currentTime = new Date().getTime();
+      if (currentTime - clickTime < 1000) {
+        $('.parent-modal').removeClass('show');
+        $('.parent-moda-two').addClass('show');
+        $('input').val('');
+        $('textarea').val('');
+      }
     }
   });
-
 
 });
