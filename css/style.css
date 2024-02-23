@@ -31,6 +31,7 @@ ul {
 body {
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
+  /* background: #012A5C; */
   background-image: url(../images/bg.webp);
   background-repeat: no-repeat;
   background-size: cover;
@@ -41,8 +42,10 @@ body {
 }
 
 .container {
-  max-width: 1665px;
-  margin: 0 auto;
+  padding-left: 128px;
+  padding-right: 128px;
+  max-width: 100%;
+  width: 100%;
 }
 
 .title-text,
@@ -113,8 +116,6 @@ body {
   padding: 10px 0;
   display: flex;
   gap: 20px;
-  /* border: 2px solid rgb(255, 255, 255);
-  border-radius: 20px; */
   align-items: center;
   cursor: pointer;
 }
@@ -445,7 +446,7 @@ body {
 .monitoring-section {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   margin-bottom: 100px;
 }
 
@@ -625,12 +626,13 @@ body {
   display: flex;
   align-items: start;
   gap: 30px;
+  justify-content: space-between;
   margin: 30px 0 42px 0;
   padding-left: 10px;
 }
 
 .services-section .services__list-boxes .services__list-box {
-  width: 50%;
+  /* width: 50%; */
 }
 
 .services-section .services__list-boxes .list {
