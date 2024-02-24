@@ -142,9 +142,15 @@ ul {
   }
 }
 
-@media screen and (min-width: 1920px) {
+@media screen and (min-width: 1921px) {
   .protection-section .protection__section-img {
     right: -11.75rem !important;
+  }
+
+  .shield-motor .shield-img+img {
+    width: 69% !important;
+    left: 14rem;
+    position: absolute;
   }
 
   .protection-section .protection__section-img {
@@ -174,6 +180,10 @@ ul {
   .contact-map iframe {
     width: 52.875rem;
     height: 25.25rem;
+  }
+
+  .gears-box .gears-img {
+    width: 70% !important;
   }
 
   .protection-section .protection__section-img img,
@@ -576,7 +586,7 @@ body {
 
 .characteristics-section .characteristics__img-box {
   position: absolute;
-  top: 0;
+  top: 6rem;
   left: -9.5rem;
   z-index: -1;
 }
@@ -2411,10 +2421,38 @@ body {
     margin-left: 0;
   }
 
-  .protection-section .protection__section-img {
+  /* .protection-section .protection__section-img {
     top: 1.75rem;
     width: 75%;
     left: 35%;
+  } */
+
+  .protection-section .protection__section-img {
+    top: 7.5rem;
+    width: 100%;
+    left: 13.5rem;
+  }
+
+  .protection__section-img .shield-motor .shield-img {
+    top: -2rem;
+    right: 4rem;
+  }
+
+  .protection__section-img .shield-motor .shield-img+img {
+    width: 60% !important;
+    right: 11rem !important;
+    top: 0rem !important;
+  }
+
+  .characteristics__img-box {
+    margin-top: 5rem;
+  }
+
+  .characteristics__img-box .gears-box .gears-img {
+    width: 68%;
+    top: -1rem !important;
+    opacity: 0.9;
+    left: -2rem;
   }
 }
 
@@ -2440,6 +2478,51 @@ body {
   opacity: 0.4;
 }
 
+
 .shield-motor .shield-img+img {
   width: 80%;
+}
+
+.gears-box {
+  position: relative;
+}
+
+.gears-box .gears-img {
+  position: absolute;
+  top: -4rem;
+  left: 0rem;
+  opacity: 0.3;
+  z-index: -1;
+}
+
+@media screen and (max-width: 1525px) {
+  .shield-motor .shield-img+img {
+    width: 67%;
+    position: absolute;
+    right: 7rem;
+    top: -2rem;
+  }
+}
+
+@media screen and (max-width: 960px) {
+
+  .protection-section .protection__section-img {
+    top: 7.5rem;
+    width: 100%;
+    left: 13rem;
+  }
+
+  .protection__section-img .shield-motor .shield-img+img {
+    width: 59%;
+    position: absolute;
+    right: 6rem;
+    top: -2rem;
+  }
+
+
+
+  .characteristics__img-box .gears-box .gears-img {
+    width: 67%;
+    top: -3rem;
+  }
 }
