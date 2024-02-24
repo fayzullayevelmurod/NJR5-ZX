@@ -2280,12 +2280,12 @@ body {
   .protection-section::before {
     content: "";
     position: absolute;
-    top: -6rem;
+    top: -4rem;
     right: -6rem;
-    width: 92%;
+    width: 100%;
     height: 100%;
     background-image: url(../images/icons/2.svg);
-    background-size: contain;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
     z-index: -1;
   }
