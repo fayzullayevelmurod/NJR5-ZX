@@ -14,7 +14,7 @@ $(document).ready(function () {
   });
 
   var swiper = new Swiper(".solutions-swiper", {
-    slidesPerView: 1.23,
+    slidesPerView: 1,
     spaceBetween: 50,
     pagination: {
       el: ".swiper-pagination",
@@ -28,7 +28,7 @@ $(document).ready(function () {
     loop: true,
     breakpoints: {
       800: {
-        slidesPerView: 1.23,
+        slidesPerView: 1,
         spaceBetween: 50,
       },
       0: {

@@ -1133,13 +1133,21 @@ body {
   }
 
   .solutions-section .swiper-button-prev {
-    left: var(--swiper-navigation-sides-offset, 110px);
+    left: var(--swiper-navigation-sides-offset, 70px);
   }
+
+
 }
 
 @media screen and (max-width: 1330px) {
   .solutions-section .swiper-button-next {
     right: var(--swiper-navigation-sides-offset, 140px);
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .solutions-section .swiper-button-next {
+    right: var(--swiper-navigation-sides-offset, 50px) !important;
   }
 }
 
@@ -1829,7 +1837,8 @@ body {
   }
 
   .modal-dialog {
-    height: 31.25rem;
+    height: 100%;
+    margin: 1rem 0;
     overflow-y: scroll;
   }
 
@@ -1837,11 +1846,6 @@ body {
     text-align: left;
     font-size: 1rem;
   }
-
-  /* .modal .modal-close svg {
-    width: 1.25rem;
-    height: 1.25rem;
-  } */
 }
 
 @media screen and (max-width: 48rem) {
@@ -1894,7 +1898,7 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100vh;
+    height: auto;
     background-color: rgb(0, 42, 91);
     z-index: 9999;
     transform: translateX(-100%);
@@ -2376,7 +2380,13 @@ body {
     height: 100%;
     background-image: url(../images/icons/6.svg);
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: 100% 100%;
+  }
+
+  .solutions-section .title-text {
+    text-align: left;
+    font-size: 28px;
+    margin-left: -5px;
   }
 
   .solutions-section .swiper-button-next,
@@ -2421,6 +2431,10 @@ body {
     margin-left: 0;
   }
 
+  .modal label {
+    margin: 0.5rem 0 0.625rem 0;
+  }
+
   /* .protection-section .protection__section-img {
     top: 1.75rem;
     width: 75%;
@@ -2454,6 +2468,35 @@ body {
     opacity: 0.9;
     left: -2rem;
   }
+
+  .media-icon {
+    display: block !important;
+    width: 100% !important;
+    height: 100% !important;
+  }
+
+  .media-icon__none {
+    display: none;
+  }
+
+  .solutions-section .swiper-button-next,
+  .solutions-section .swiper-button-prev {
+    background: transparent;
+    width: 25px;
+    height: 20px;
+  }
+
+  .solutions-section .swiper-button-next {
+    right: var(--swiper-navigation-sides-offset, 0) !important;
+  }
+
+  .solutions-section .swiper-button-prev {
+    left: 0.2em;
+  }
+}
+
+.media-icon {
+  display: none;
 }
 
 @media screen and (max-width: 24.375rem) {
@@ -2525,4 +2568,16 @@ body {
     width: 67%;
     top: -3rem;
   }
+}
+
+.solutions-section .swiper {
+  overflow: hidden !important;
+}
+
+.solutions-section .swiper-button-next {
+  right: var(--swiper-navigation-sides-offset, 120px);
+}
+
+.solutions-section .swiper {
+  padding-left: 0;
 }
