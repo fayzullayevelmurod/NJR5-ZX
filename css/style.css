@@ -518,8 +518,8 @@ body {
 
 .protection-section .protection__section-img {
   position: absolute;
-  top: -2.5rem;
-  right: -18.75rem;
+  top: 8rem;
+  right: -31.75rem;
   z-index: -1;
 }
 
@@ -2322,16 +2322,25 @@ body {
   }
 
   .solutions-section .swiper-button-prev {
-    left: 2rem;
+    left: 0;
   }
 
   .solutions-section .swiper-button-next {
-    right: 2rem;
+    right: 0;
   }
 
   .solutions-section,
   .services-section {
     position: relative;
+  }
+
+  .solutions-section .swiper {
+    overflow: hidden;
+  }
+
+  .solutions-section {
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   .solutions-section::before {
@@ -2415,4 +2424,22 @@ body {
     left: 28%;
     width: 85%;
   }
+}
+
+/* shield-motor */
+.shield-motor {
+  position: relative;
+}
+
+.shield-motor .shield-img {
+  position: absolute;
+  top: -7rem;
+  right: -11rem;
+  width: 124%;
+  z-index: -1;
+  opacity: 0.4;
+}
+
+.shield-motor .shield-img+img {
+  width: 80%;
 }
